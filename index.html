@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | The Purifiers</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TPCDSv2.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">The Purifiers</div>
-      </div>
-    </div>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Purifiers - Loperty</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #00ffcc;
+    }
+    .tutorial {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .play-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #00ffcc;
+      color: #000;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .play-button:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Purifiers - Loperty</h1>
+
+  <div class="tutorial">
+    <h2>Como jogar:</h2>
+    <ul>
+      <li>Use as teclas <strong>W A S D</strong> para mover o personagem</li>
+      <li>Use o mouse para mirar e atirar</li>
+      <li>Derrote todos os inimigos para avançar de fase</li>
+      <li>Evite os ataques e colete upgrades pelo mapa</li>
+    </ul>
+  </div>
+
+  <a class="play-button" href="index.html">Jogar Agora</a>
+</body>
 </html>
